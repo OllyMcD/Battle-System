@@ -38,9 +38,20 @@ namespace Battle_System.Classes
                 Console.WriteLine($"the {enemy.GetName()} attacks you " +
                     $"with a {enemy.GetWeaponName()} " +
                     $"and deals {enemyAttack} damage");
-                Console.WriteLine($"you have {player.GetHp()} health");
-
+                Console.WriteLine($"you have {player.GetHp()} health");               
                 Console.ReadLine();
+
+
+                if (enemy.GetHp() == 0)
+                {
+                    Console.WriteLine("Loading Up Overwatch!");
+                    Console.Beep();
+                    over = true;
+                    continue;
+                }
+                    
+
+                
             }
         }
     }

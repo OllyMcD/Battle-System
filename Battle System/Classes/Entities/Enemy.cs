@@ -17,6 +17,21 @@ namespace Battle_System.Classes.Entities
     {
         public Skeleton() : base("Skeleton")
         {
+            hp = 100;
+        }
+    }
+
+    internal class Zombie : Enemy
+    {
+        public Zombie() : base("Zombie")
+        {
+
+        }
+    }
+    internal class Spider : Enemy
+    {
+        public Spider() : base("Spider")
+        {
 
         }
     }
